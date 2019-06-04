@@ -1,0 +1,24 @@
+﻿CREATE PROC Sales.custDelete (@custid int)
+AS
+BEGIN
+	SET LOCK_TIMEOUT 3000;
+	BEGIN TRY
+		IF EXISTS (SELECT custid FROM Sales.Orders WHERE custid = @custid)
+		BEGIN
+			RAISERROR(N'Kupac ima faktura!', 16, 1);	
+		END	
+		IF NOT EXISTS (SELECT companyname FROM Sales.Customers WHERE custid = @custid)
+		BEGIN
+			RAISERROR(N'Kupac sa unesenim id-jem ne postoji.', 16, 1);
+		END
+		DELETE FROM Sales.Customers WHERE custid = @custid;				
+	END TRY
+	BEGIN CATCH
+		DECLARE @errMessage nvarchar(4000);  
+		DECLARE @errSeverity int;  
+		DECLARE @errState int;    
+		SELECT @errMessage = ERROR_MESSAGE(), @errSeverity = ERROR_SEVERITY(), @errState = ERROR_STATE();  		
+		RAISERROR (@errMessage, @errSeverity, @errState); 
+	END CATCH
+END
+GO

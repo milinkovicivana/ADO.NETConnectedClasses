@@ -1,0 +1,7 @@
+D:\Downloads\RAF\Microsoft tehnologije za pristup podacima\PrviDomaci\ADO.NetConnected\ADO.NetConnected\bin\Debug\ADO.NetConnected.exe.config
+D:\Downloads\RAF\Microsoft tehnologije za pristup podacima\PrviDomaci\ADO.NetConnected\ADO.NetConnected\bin\Debug\ADO.NetConnected.exe
+D:\Downloads\RAF\Microsoft tehnologije za pristup podacima\PrviDomaci\ADO.NetConnected\ADO.NetConnected\bin\Debug\ADO.NetConnected.pdb
+D:\Downloads\RAF\Microsoft tehnologije za pristup podacima\PrviDomaci\ADO.NetConnected\ADO.NetConnected\obj\Debug\ADO.NetConnected.csprojAssemblyReference.cache
+D:\Downloads\RAF\Microsoft tehnologije za pristup podacima\PrviDomaci\ADO.NetConnected\ADO.NetConnected\obj\Debug\ADO.NetConnected.csproj.CoreCompileInputs.cache
+D:\Downloads\RAF\Microsoft tehnologije za pristup podacima\PrviDomaci\ADO.NetConnected\ADO.NetConnected\obj\Debug\ADO.NetConnected.exe
+D:\Downloads\RAF\Microsoft tehnologije za pristup podacima\PrviDomaci\ADO.NetConnected\ADO.NetConnected\obj\Debug\ADO.NetConnected.pdb
